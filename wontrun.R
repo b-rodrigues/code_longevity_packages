@@ -1,28 +1,14 @@
 #!/usr/bin/env Rscript
-args <- commandArgs(trailingOnly=TRUE)
+args <- commandArgs(trailingOnly = TRUE)
 
-library(dplyr)
-library(purrr)
 library(wontrun)
 
-list_args <- as.list(args)
+packages_sources <- get_archived_sources(args[1])
 
-packages <- head(list_args, -1)
-
-cl <- tail(list_args, 1)[[1]]
-
-print(packages)
-
-packages_sources <- packages %>%
-  map(get_archived_sources) %>%
-  map(~head(., 1))
-
-
-out <- packages_sources %>%
-  map(~wontrun(.,
-               ncpus = cl,
+out <- wontrun(packages_sources ,
+               ncpus = args[2],
                setup = TRUE,
-               wontrun_lib = "/usr/local/lib/R/site-library/"))
+               wontrun_lib = "/usr/local/lib/R/site-library/")
 
-
-saveRDS(out, paste0("/home/output/", janitor::make_clean_names(packages), ".rds"))
+saveRDS(object = out,
+        file = paste0("/home/intermediary_output/", args[1], ".rds"))
