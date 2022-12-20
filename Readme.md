@@ -42,7 +42,7 @@ RUN Rscript '/home/wontrun.R' AER 6
 
 The last argument is the number of cpu cores that should be used to run the examples.
 
-Build the image with the following line (depending on how many packages you want to asses, and on how complex their examples are, this can take hours):
+Build the image with the following line (depending on how many packages you want to assess, and on how complex their examples are, this can take hours):
 
 ```
 docker build -t code_longevity_packages .
