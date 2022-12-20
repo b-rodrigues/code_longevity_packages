@@ -55,3 +55,5 @@ docker run --rm --name code_longevity_packages_container -v /path/to/repository/
 ```
 
 The `output/` folder will have now `.rds` files with the results that you can consult. Please contribute them back to here using a pull request.
+
+Thanks to [Dirk Eddelbuettel](https://github.com/eddelbuettel) for the original idea and for his help with this project!
