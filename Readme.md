@@ -22,7 +22,7 @@ To asses the code longevity of (several) R packages, start by forking this repos
 Then, edit the `Dockerfile` and change these lines:
 
 ```
-# Add one line per package you want to asses
+# Add one line per package you want to assess
 RUN Rscript '/home/wontrun.R' dplyr 6
 RUN Rscript '/home/wontrun.R' purrr 6
 RUN Rscript '/home/wontrun.R' tidyr 6
