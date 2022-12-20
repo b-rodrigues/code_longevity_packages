@@ -10,7 +10,10 @@ RUN Rscript '/home/wontrun.R' dplyr 6
 RUN Rscript '/home/wontrun.R' purrr 6
 RUN Rscript '/home/wontrun.R' tidyr 6
 RUN Rscript '/home/wontrun.R' rlang 6
-#RUN Rscript '/home/wontrun.R' ggplot2 6
-#RUN Rscript '/home/wontrun.R' stringr 6
+RUN Rscript '/home/wontrun.R' lubridate 6
+RUN Rscript '/home/wontrun.R' haven 6
+RUN Rscript '/home/wontrun.R' forcats 6
+RUN Rscript '/home/wontrun.R' stringr 6
+RUN Rscript '/home/wontrun.R' tibble 6
 
 CMD mv /home/intermediary_output/* /home/output/
