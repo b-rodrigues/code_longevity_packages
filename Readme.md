@@ -3,7 +3,7 @@
 This repository is part of a project whose aim is to assess code longevity of the R programming language. 
 Other repositories that are part of this project are:
 
-- The {wontrun} packages: https://github.com/b-rodrigues/wontrun
+- The {wontrun} package: https://github.com/b-rodrigues/wontrun
 - Code longevity of {base}, {stats}, etc: https://github.com/b-rodrigues/code_longevity
 - Shiny app to analyze the results: https://github.com/b-rodrigues/longevity_app
 
