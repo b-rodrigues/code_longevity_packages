@@ -15,7 +15,7 @@ This way, downloaded packages are fixed.
 Then, the {wontrun} package is used to pull archived packages from CRAN, and runs the examples 
 contained in these archived packages on the current version (as of November 21st) of the package.
 Results are then collected and saved into an RDS file. This RDS file can then be analyzed using
-the above listed above. In a future release of this project, the Shiny app will also be dockerized
+the Shiny app listed above. In a future release of this project, the Shiny app will also be dockerized
 and started automatically after running this container.
 
 To asses the code longevity of (several) R packages, start by forking this repository, and then clone it.
